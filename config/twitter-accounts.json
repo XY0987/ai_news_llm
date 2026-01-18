@@ -1,0 +1,38 @@
+{
+  "config": {
+    "maxResultsPerPage": 100,
+    "defaultLanguages": ["en", "zh"],
+    "defaultQuerySuffix": "-is:retweet",
+    "maxItemsPerAccount": 10,
+    "maxItemsPerKeyword": 10
+  },
+  "keywords": [],
+  "accounts": [{
+    "handle": "AnthropicAI",
+    "displayName": "Anthropic"
+  },{
+    "handle": "deepseek_ai",
+    "displayName": "DeepSeek"
+  },{
+    "handle": "OpenRouterAI",
+    "displayName": "OpenRouter"
+  },{
+    "handle": "kirodotdev",
+    "displayName": "Kiro"
+  },{
+    "handle": "cursor_ai",
+    "displayName": "Cursor"
+  },{
+    "handle": "sama",
+    "displayName": "Sam Altman"
+  },{
+    "handle": "claudeai",
+    "displayName": "Claude"
+  }, {
+    "handle": "GeminiApp",
+    "displayName": "Google Gemini App"
+  },{
+    "handle": "OpenAI",
+    "displayName": "OpenAI"
+  }]
+}

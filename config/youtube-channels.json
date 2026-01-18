@@ -1,0 +1,16 @@
+{
+  "channels": [
+    {
+      "channelId": "UC_x5XG1OV2P6uZZ5FSM9Ttw",
+      "name": "Google for Developers",
+      "maxItemsPerChannel": 5
+    }
+  ],
+  "keywords": [],
+  "config": {
+    "maxResultsPerKeyword": 5,
+    "maxResultsPerPage": 50,
+    "defaultLanguages": ["en", "zh"],
+    "queryPrefix": "-is:live"
+  }
+}

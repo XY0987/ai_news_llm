@@ -1,0 +1,62 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+.pnpm-debug.log*
+
+# 环境变量和配置
+.env
+.env.local
+.env.*.local
+*.local.json
+config.local.*
+
+# 微信登录 token (自动生成,包含敏感信息)
+.wechat-token.json
+
+# Claude 本地配置
+.claude/settings.local.json
+.claude/*.local.*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# 日志文件
+logs/
+*.log
+log/
+
+# 数据库
+*.db
+*.sqlite
+*.sqlite3
+
+# 缓存
+.cache/
+*.cache
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# 临时文件
+tmp/
+temp/
+*.tmp
+
+# 输出文件
+output/
+data/
+*.csv
+*.json.bak
+.claude/
+
+# 确保 src/output/ 目录不被忽略
+!src/output/

@@ -1,0 +1,50 @@
+{
+  "name": "ai-news-collector",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "AI 新闻采集器 - 从多个数据源采集 AI 相关新闻并使用 LLM 智能过滤",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "test": "vitest",
+    "test:unit": "vitest run",
+    "test:coverage": "vitest --coverage",
+    "test:watch": "vitest --watch",
+    "demo:twitter": "node scripts/twitter-demo.js",
+    "composio:connection": "node scripts/composio-connection-info.js",
+    "wechat:fetch-accounts": "node scripts/fetch-wechat-accounts.js"
+  },
+  "keywords": [
+    "ai",
+    "news",
+    "collector",
+    "llm",
+    "filter"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@composio/core": "^0.2.3",
+    "axios": "^1.13.1",
+    "cheerio": "^1.1.2",
+    "dotenv": "^16.6.1",
+    "openai": "^6.7.0",
+    "puppeteer": "^24.27.0",
+    "string-similarity": "^4.0.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XiaogeAIBreaker/ai-news-collector.git"
+  },
+  "bugs": {
+    "url": "https://github.com/XiaogeAIBreaker/ai-news-collector/issues"
+  },
+  "homepage": "https://github.com/XiaogeAIBreaker/ai-news-collector#readme",
+  "devDependencies": {
+    "vitest": "^4.0.6"
+  }
+}

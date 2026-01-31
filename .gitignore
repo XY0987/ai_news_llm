@@ -60,3 +60,10 @@ data/
 
 # 确保 src/output/ 目录不被忽略
 !src/output/
+
+wechat-mp-analyzer/config/*
+
+# 微信公众号分析器配置文件（包含敏感信息）
+skills/wechat-mp-analyzer/config/
+
+.codebuddy/

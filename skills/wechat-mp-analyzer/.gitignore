@@ -1,0 +1,14 @@
+# 输出文件
+output/*.json
+output/*.md
+
+# 敏感配置文件（可选，如果用户希望保密）
+# config/config.json
+
+# 临时文件
+*.tmp
+*.log
+.DS_Store
+
+# Node.js
+node_modules/

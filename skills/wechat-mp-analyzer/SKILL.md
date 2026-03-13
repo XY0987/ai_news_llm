@@ -13,6 +13,20 @@ description: 微信公众号资讯分析器。采集公众号文章，使用编�
 
 ## 完整工作流程
 
+### 步骤 0：环境准备（必须首先执行）
+
+本项目所有脚本需要 **Node.js v22+**，执行任何脚本前必须先确保版本正确。
+
+**在每个新 shell 会话中首先执行：**
+
+```bash
+source skills/wechat-mp-analyzer/scripts/ensure-node.sh
+```
+
+> 该脚本会自动检查当前 Node 版本，如果低于 v22 则通过 nvm 自动切换。
+> ⚠️ 必须用 `source` 执行，否则版本切换不会在当前 shell 生效。
+> ⚠️ 后续所有 node 命令必须在同一个 shell 会话中执行。
+
 ### 步骤 1：采集文章
 
 ```bash
@@ -109,6 +123,7 @@ node skills/wechat-mp-analyzer/scripts/generate-report.js
 
 | 要求 | 说明 |
 |------|------|
+| ✅ 环境检查 | 执行脚本前必须先 `source ensure-node.sh` 确保 Node v22+ |
 | ✅ 分批处理 | 每次只处理 3-5 篇，避免上下文过长 |
 | ✅ 立即保存 | 每篇文章分析完立即保存，防止丢失 |
 | ✅ 全部分析 | 必须分析所有文章，不能跳过 |
@@ -156,6 +171,9 @@ node skills/wechat-mp-analyzer/scripts/incremental-analyzer.js reset
 **AI 执行：**
 
 ```bash
+# 0. 环境准备（确保 Node v22+）
+source skills/wechat-mp-analyzer/scripts/ensure-node.sh
+
 # 1. 采集
 node skills/wechat-mp-analyzer/scripts/fetch-articles.js 1
 
